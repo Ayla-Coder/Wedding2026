@@ -11,10 +11,11 @@ Here is a picture of us on the beach:
     </html>
 
 Trying html background: 
-
-<style>
-p {
-  background-image: url('https://github.com/Ayla-Coder/Wedding2026.github.io/blob/main/docs/assets/Engagement_header.png');
-}
-</style>
+<html>
+      <style>
+       p {
+             background-image: url('https://github.com/Ayla-Coder/Wedding2026.github.io/blob/main/docs/assets/Engagement_header.png');
+       }
+      </style>
+</html>
 
