@@ -1,4 +1,8 @@
-# Ayla and Thomas, 16 May 2026
+---
+title: "DAyla and Thomas, 16 May 2026"
+date: 2025-03-21
+output: html_document
+---
 This is a website for guests for my wedding in 2026
 
 Here is a picture of us on the beach:
