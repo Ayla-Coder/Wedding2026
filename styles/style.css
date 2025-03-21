@@ -3,12 +3,13 @@ html {
     background-size: cover;
     background-position: 0% 25%;
     background-color: #A8322D;
-    background-attachment: fixed;
+    background-attachment: scroll;
     cursor: crosshair;
   }
 
   body {
     width: 1300px;
+    height: 3000px;
     margin: 0 auto;
     background-image: linear-gradient( rgba(255, 255, 255, 0.127), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255));
     padding: 0 20px 20px 20px;
