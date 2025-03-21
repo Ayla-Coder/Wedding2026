@@ -5,4 +5,4 @@ Here is a picture of us on the beach:
 ![Engagement photo from glass beach](https://github.com/Ayla-Coder/Wedding2026.github.io/blob/main/docs/assets/Engagement_header.png)
 
 
-hello
+
