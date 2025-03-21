@@ -18,8 +18,7 @@ Trying html background:
 <html>
       <style>
        p {
-             background-image: url('https://github.com/Ayla-Coder/Wedding2026.github.io/blob/main/docs/assets/Engagement_header.png');
+             background-image: url('https://github.com/Ayla-Coder/Wedding2026.github.io/blob/main/Engagement_header.png');
        }
       </style>
 </html>
-
