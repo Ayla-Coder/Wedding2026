@@ -6,7 +6,7 @@ Here is a picture of us on the beach:
 
 
 <html>
-      <head>
+      <head> Hello World!
       </head>
     </html>
 
