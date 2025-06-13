@@ -21,7 +21,7 @@ html {
     font-size: 100px;
     text-align: center;
     font-weight: 400;
-    font-style: bold;
+    
   }
 
   h2 {
@@ -29,7 +29,6 @@ html {
     font-size: 60px;
     text-align: center;
     font-weight: 400;
-    font-style: normal;
   }
 
 
@@ -38,8 +37,18 @@ html {
     font-family: "Open Sans", sans-serif;
     font-size: 40px;
     text-align: left;
-    font-weight: 400;
-    font-style: bold;
+    font-weight: bold;
+
+  }
+
+  h4 {
+    font-family: "Roboto Flex";
+    font-size: 20px;
+    text-align: left;
+    font-weight: bolder;
+  
+
+
   }
 
   html {
@@ -47,8 +56,35 @@ html {
 
   }
 
-  /*img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-  }*/
+  form { 
+    margin: 0;
+    background: rgb(255, 255, 255);
+    padding: 20px 20px 20px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 500px
+    
+
+  }
+
+  input[type = text]{
+    width: 500px;
+    height: 30px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  input[type = email]{
+    width: 500px;
+    height: 30px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  input[type = submit]{
+    width: 500px;
+    height: 30px;
+    margin: 20px 0px;
+    box-sizing: border-box;
+  }

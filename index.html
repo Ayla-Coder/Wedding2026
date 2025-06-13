@@ -4,12 +4,17 @@
     <link href="styles/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
     <!---<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" /> --->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Ayla and Thomas wedding page</title>
     <link rel="icon" href="patchesscreaming_transparent.ico" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/gh/tanaikech/HtmlFormObjectParserForGoogleAppsScript_js/htmlFormObjectParserForGoogleAppsScript_js.min.js"></script>
+    <script src="script.js"></script>
+  
   </head>
+
   <body>
 <h1>Ayla and Thomas</h1>
 <h2>16 May 2026</h2>
@@ -29,6 +34,22 @@
   on this website yet. This will be implemented asap. In the meantime, if you have any questions, feel free to contact either me or Thomas 
 individually or via our shared email address codergulbrandsen@gmail.com </p>
 
+<h4>Sign up here to get emails when the website is updated with important info!</h4>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="Name" 
+  autocomplete="name"/><br />
+  <label for="elmail">Email:</label><br>
+  <input type="email" id = "elmail" name="Email" 
+  autocomplete="email"/><br />
+  <input
+    type="submit"
+    name="button"
+    value="submit"
+    onclick="run(this);return false;"
+  />
+</form>
 
 <h3>Dress Code</h3>
 <p>We decided to go with a blend of cocktail-style and formal ballgown/medieval style. For reference, this is what the bridemaids will be wearing: </p>
