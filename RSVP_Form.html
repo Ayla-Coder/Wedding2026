@@ -7,7 +7,7 @@
     <body>
         <form id="mainRSVPForm" autocomplete="off"> 
             <fieldset id="RSVPFieldset">
-                <legend><h3>RSVP form</h3></legend>
+                <legend><h3>RSVP form</h3><img src="images/rings_transparent.png" alt="Ring icon"></legend>
                 <label for="Responder">Please enter your full name (the person filling out the form):</label>
                 <input type="text" id="Responder" name="responder" placeholder="Full name" required> <br><br>
                 
@@ -24,7 +24,7 @@
                     <input type="checkbox" id="NoElUp" name="noEmail">
                     <label for="NoElUp">No thank you, I'll make sure to keep checking the website myself</label>
                     <br><br>
-                    <button type="button" id="nextButton">Next</button>
+                    <button type="button" id="nextButton">OK</button>
                 </div>
                 
                 <div id="SubmitDiv" name="submit" style="display:none;">
@@ -34,25 +34,25 @@
 
 
             <fieldset id="guestInfoSection" style="display:none;">
-                <legend><h2>Guest Info:</h2></legend>
-                <label for="guestNR">How many guests from your group are coming (including children)?</label>
+                <legend><h2>Guest Info:</h2><img src="images/Frilled_heart.png" alt="Heart icon"></legend>
+                <label for="guestNR">How many guests from your group are coming (including you, the responder, and children)?</label>
                 <input type="number" min=1 max=10 id="guestNR"/>
                 <br><br>
 
                 <div id="gInfo" style="display:none">
-                    
+                    <b> Please also fill out the info for you, the responder, as Guest 1.</b>                    
                 </div>
 
                 <br><br>
                 <div id="testArray" style="display:none">
                    
-                    <input type="button" id="Next2" value="Next"/>  
+                    <button type="button" id="Next2" value="Next">OK</button>  
                 </div>
 
             </fieldset>
 
             <fieldset id="Menu" style="display:none">
-                <legend><h2>Menu</h2></legend>
+                <legend><h2>Menu</h2><img src="images/Cutlery_transparent.png" alt="Cutlery icon"></legend>
                 <p>The main course will likely be beef. We will update our website with the chosen menu when we know more, but this won't be until 2026. </p>
 
                 <div id="guestMeals">
@@ -61,12 +61,12 @@
                 <br><br>
                 <div id="testMealArray" style="display:none">
                     
-                    <input type="button" id="Next3" value="Next"/>
+                    <button type="button" id="Next3" value="Next">OK<button/>
                 </div>
             </fieldset>
 
             <fieldset id="Bus" style="display:none">
-                <legend><h2>Will any of you be taking the bus? What time?</h2></legend>
+                <legend><h2>Will any of you be taking the bus? What time?</h2><img src="images/Buss.jpeg" alt="Bus icon"></legend>
                 <p>Remember that we will ask that you pay a small sum of money to cover some of the cost of hiring the bus. We will keep this under
                     the price of hiring a taxi, which are notoriously expensive in Norway, though this is always an option. As for payment options, 
                     I'll set that up on the website asap. 
@@ -80,13 +80,13 @@
                 <br><br>
                 <div id="testBusArray" style="display:none">
                    
-                    <input type="button" id="Next4" value="Next"/>
+                    <button type="button" id="Next4" value="Next">OK</button>
                 </div>
 
             </fieldset>
 
             <fieldset id="Drinks" style="display:none">
-                <legend><h2>Drink Vouchers</h2></legend>
+                <legend><h2>Drink Vouchers</h2><img src="images/Skaal.png" alt="Drink icon"></legend>
 
                 <p>Due to limited space and to save time (and because of the alcohol-serving laws in Norway), instead of having a normal bar
                     set-up we have to use drink-vouchers. These will be sold in packs of three on our website, and will be purchaseable using 
@@ -119,13 +119,13 @@
                 <div id="DrinkNext">
                 </div>
                 <div id="Next5" style="display:none">
-                    <input type="button" id="btn5" value="Next" />
+                    <button type="button" id="btn5" value="Next">OK</button>
                 </div>
                 
             </fieldset>
 
             <fieldset id="End" style="display:none">
-                <legend>Any questions?</legend>
+                <legend><b>Any questions or small notes you want us to read?</b> <img src="images/thinker.png" alt="Thinker icon"></legend>
                
                 <label for="Questions">Please write any questions you have here and we will get back to you as soon as possible!</label><br>
                 <input type="text" id="Questions" name="longAns"/>

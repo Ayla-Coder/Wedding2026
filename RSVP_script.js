@@ -434,7 +434,7 @@ function createMealSection(personName) {
         <label>${personName}: </label>
         <select id="menu${safeName}" class="menuItem${safeName}"> 
             <option value="">--Please choose an option--</option>
-            <option value="Standard meal">Standard meal</option>
+            <option value="Standard meal">Traditional Beef Entré</option>
             <option value="Vegan">Vegan</option>
             <option value="Vegetarian">Vegetarian</option>
             </select>
@@ -1064,6 +1064,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Next button on RSVP
     nextButton.addEventListener("click", function() {
         guestInfoSection.style.display = "block";
+        document.getElementById("guestInfoSection").scrollIntoView({ behavior: "smooth" });
     });
 
     // Show/hide email and submit based on RSVP answer
@@ -1086,20 +1087,24 @@ document.addEventListener("DOMContentLoaded", function() {
     Next2.addEventListener("click", function() {
         if (validateInfo(GuestInfoStorage, guestInfoSchema)) {
             updateMeal();
+            document.getElementById("Menu").scrollIntoView({ behavior: "smooth" });
         }
     });
     Next3.addEventListener("click", function() {
         if (validateInfo(MealInfoStorage, mealInfoSchema)) {
             updateBus();
+            document.getElementById("Bus").scrollIntoView({ behavior: "smooth" });
         }
     });
     Next4.addEventListener("click", function() {
         if (validateInfo(BusInfoStorage, busInfoSchema)) {
             updateDrinks();
+            document.getElementById("Drinks").scrollIntoView({ behavior: "smooth" });
         }
     });
     Next5.addEventListener("click", function(){
         document.getElementById("End").style.display = "block";
+        document.getElementById("End").scrollIntoView({ behavior: "smooth" });
     });
 
     // Modal dialog for drinks info
