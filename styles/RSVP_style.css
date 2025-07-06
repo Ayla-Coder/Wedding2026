@@ -38,6 +38,10 @@ fieldset{
 
    border:solid 2px #41403E;
 }
+input[type="button"]{
+   max-width: 600px;
+
+};
 
 button {                  
                 cursor: pointer;
