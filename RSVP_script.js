@@ -1182,6 +1182,15 @@ document.addEventListener("DOMContentLoaded", function() {
             // Full data for "yes" RSVP
             formData = gatherFormData(sharedQuestion);
         }
+         // Find the submit button that was clicked
+            const submitBtn = e.submitter || document.getElementById("Submit");
+
+            // Disable and grey out the button
+            submitBtn.disabled = true;
+            submitBtn.classList.add("button-disabled");
+
+            // Optionally, change the button text to indicate progress
+            submitBtn.textContent = "Submitting...";
 
         const url = 'https://script.google.com/macros/s/AKfycbxUEWNlYze7CeFiak6HmpKIY10d4cK1NscIqprJNDD3nMGumTvUTjAE3aWuxMonILsU/exec';
 
