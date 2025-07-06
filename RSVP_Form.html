@@ -17,7 +17,7 @@
                 <label for="Responder">Please enter your full name (the person filling out the form):</label>
                 <input type="text" id="Responder" name="responder" placeholder="Full name" required> <br><br>
                 
-                <h4>Can your group make it?</h4>
+                <h4>Can you/your group make it?</h4>
                 <input type="radio" id="Coming" name="RSVP1" value="yes" required>
                 <label for="Coming">Yes</label>
                 <input type="radio" id="NotComing" name="RSVP1" value="no">
@@ -28,7 +28,7 @@
                     <label for="EUpdates">Please enter your email here:</label>
                     <input type="email" id="EUpdates" name="email" placeholder="example@gmail.com"><br><br>
                     <input type="checkbox" id="NoElUp" name="noEmail">
-                    <label for="NoElUp">No thank you, I'll make sure to keep checking the website myself</label>
+                    <label for="NoElUp">No thank you, I'll make sure to keep checking the website myself </label>
                     <br><br>
                     <button type="button" id="nextButton">OK</button>
                 </div>
@@ -41,12 +41,12 @@
 
             <fieldset id="guestInfoSection" style="display:none;">
                 <legend><h2>Guest Info:<img src="images/Frilled_heart.png" alt="Heart icon" class="legend-img"></h2></legend>
-                <label for="guestNR">How many guests from your group are coming (including you, the responder, and children)?</label>
+                <label for="guestNR">How many guests from your invite are coming (including you, the responder, and children)?</label>
                 <input type="number" min=1 max=10 id="guestNR"/>
                 <br><br>
 
                 <div id="gInfo" style="display:none">
-                    <b> Please also fill out the info for you, the responder, as Guest 1.</b>                    
+                    <b> Please also fill out the info for everyone on your invite, including you as Guest 1.</b>                    
                 </div>
 
                 <br><br>
@@ -73,12 +73,10 @@
 
             <fieldset id="Bus" style="display:none">
                 <legend><h2>Will any of you be taking the bus? What time?<img src="images/bus_transparent.png" alt="Bus icon" class="legend-img2"></h2></legend>
-                <p>Remember that we will ask that you pay a small sum of money to cover some of the cost of hiring the bus. We will keep this under
-                    the price of hiring a taxi, which are notoriously expensive in Norway, though this is always an option. As for payment options, 
-                    I'll set that up on the website asap. 
-
-                    Again, we aren't 100% sure about the times for the bus yet, or if we'll hire one for both pick-up and drop-off. It all depends on 
-                    the amount of people who want/need to take the bus. All of this info will be posted to the website as soon as we know more.</p>
+                <p>We'll ask for a small contribution to help cover the bus cost; don't worry, 
+                    it'll cost much less than a taxi in Norway! I'll add payment options to the website soon.<br>
+                    We're still finalizing the bus schedule and whether we'll have it for both pick-up and drop-off. 
+                    This depends on how many people are interested. We'll share all updates on the website as soon as we know more.</p>
                 
                 <div id="BussInf">
                 </div>
@@ -94,11 +92,10 @@
             <fieldset id="Drinks" style="display:none">
                 <legend><h2>Drink Vouchers<img src="images/Skaal.png" alt="Drink icon" class="legend-img"></h2></legend>
 
-                <p>Due to limited space and to save time (and because of the alcohol-serving laws in Norway), instead of having a normal bar
-                    set-up we have to use drink-vouchers. These will be sold in packs of three on our website, and will be purchaseable using 
-                    Vipps (Norway), Paypal and bank transfers. We ask that you buy these in advance, both to save time and so that we get a 
-                    good idea of how many vouchers we will need and how many drinks we will need to provide. we will also set things up so that 
-                    you can purchase some on-site as a last resort.<b>We will of course cover the welcome-drinks and wine with dinner.</b>
+                <p>Because of space, timing, and Norwegian alcohol laws, we’ll use drink vouchers instead of a regular bar. 
+                    You can buy packs of three on our website using Vipps, PayPal, or bank transfer—we’d really appreciate it 
+                    if you purchase in advance to help us plan. Vouchers will also be available on-site if needed.
+                    <b>We’ll provide welcome drinks and wine with dinner!.</b>
                 </p>
                 <div class="container4">
 
@@ -133,7 +130,7 @@
             <fieldset id="End" style="display:none">
                 <legend><h2></legend>Any questions or small notes you want us to read?</b> <img src="images/thinker.png" alt="Thinker icon" class="legend-img2"></h2></legend>
                
-                <label for="Questions">Please write any questions you have here and we will get back to you as soon as possible!</label><br><br>
+                <label for="Questions">Please write here, and we will get back to you as soon as possible!</label><br><br>
                 <input type="text" id="Questions" name="longAns"/> <br><br>
 
                  <div id="SubmitDiv2" name="submit">
