@@ -1183,7 +1183,7 @@ document.addEventListener("DOMContentLoaded", function() {
             formData = gatherFormData(sharedQuestion);
         }
 
-        const url = 'https://script.google.com/macros/s/AKfycbz6IRoEGosC-f-C5WVwb8hbLdaVwm_M73uX8ENAo3xtSYeTQXZDDBHASBt2ahjNcWG1/exec';
+        const url = 'https://script.google.com/macros/s/AKfycbxK2_tXyshCaDX2gynpafcECaMXWY5Pwm3aJ4xbB_0WRvMEApW1h0j29QkCui69CjiTkA/exec';
 
         fetch(url, { method: 'POST', body: JSON.stringify(formData) })
             .then(res => res.json())
