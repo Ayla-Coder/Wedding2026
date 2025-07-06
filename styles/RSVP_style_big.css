@@ -1,24 +1,35 @@
+input { font-size: 1.5em; }
+p{ font-size: 1.5em;}
+label{font-size: 1.5em; }
+legend{font-size: 1.5em;}
+h1{font-size: 2.5em;}
+h2{font-size: 2.25em;}
+h3{font-size: 2em; }
+h4{font-size: 1.5em; }
+
+
 html {
     background-image: url("../images/Background\ without\ border.png");
     background-size: cover;
     background-position: 65% 15%;
     background-color: #A8322D;
     background-attachment: fixed;
-   
+    
     
   }
 
 
 .legend-img {
-  width: 60px;   /* set desired width */
-  height: 60px;  /* set desired height */
+  width: 150px;   /* set desired width */
+  height: 150px;  /* set desired height */
   object-fit: contain; /* ensures image scales without distortion */
   vertical-align: middle; /* aligns image with text */
    margin-left: 8px;
 }
 
 .legend-img2 {
-  width: 100px;   /* set desired width */
+  width: 200px;   /* set desired width */
+
   object-fit: contain; /* ensures image scales without distortion */
   vertical-align: middle; /* aligns image with text */
    margin-left: 8px;
@@ -38,7 +49,7 @@ fieldset{
    border:solid 2px #41403E;
 }
 input[type="button"]{
-   max-width: 600px;
+   max-width: 800px;
 
 };
 
@@ -87,14 +98,10 @@ margin-left: 20px; /* Adjust as needed */
 }
 .container {
   display: grid;
-  grid-template-columns: 250px 300px;
-  
-
+  grid-template-columns: 350px 400px;
 }
 .container > div {
-
   padding: 3px;
-  
   text-align: left;
   align-items: left;
 }
@@ -102,14 +109,11 @@ margin-left: 20px; /* Adjust as needed */
 
 .container2 {
   display: grid;
-  grid-template-columns: 250px 550px 300px;
+  grid-template-columns: 300px 700px 400px;
   grid-template-rows: 150px;
-
 }
 .container2 > div {
-
-  padding: 2px;
-  
+  padding: 4px;
   text-align: left;
   align-items: left;
 }
@@ -117,42 +121,29 @@ margin-left: 20px; /* Adjust as needed */
 .container3 {
   display: grid;
   grid-template-columns: 200px 350px 10px 600px;
-  
-
-}
+  }
 .container3 > div {
-
   padding: 4px;
   /*border: 1px solid black;*/
-  
-  text-align: left;
+    text-align: left;
   align-items: left;
 }
 .container4 {
   display: grid;
   grid-template-columns: 500px 300px;
-  
-
-}
+  }
 .container4 > div {
-
   padding: 3px;
-  
-  
   text-align: left;
   align-items: left;
 }
 
 .smallcontainer {
   display: grid;
-  grid-template-columns: 90px 90px 70px 90px 90px 90px;
-  
-
-}
+  grid-template-columns: 120px 120px 90px 120px 120px 120px;
+  }
 .smallcontainer div {
-
   padding: 2px;
-  
   text-align: left;
   align-items: left;
 }

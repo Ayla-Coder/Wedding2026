@@ -785,7 +785,10 @@ function createBusSection(personName) {
         </div>
 
         <div id="ifYesBus${safeName}" style="display:none">
-        <legend><b>Which hotel will you be staying at?</b></legend><br>
+        <legend>
+        <b>Which hotel do you think you will be staying at?</b><br>
+        *Just write TBD if you're not sure yet.
+        </legend>
         <label>(Where should the bus pick you up/ drop you off?)</label>
         <input type="text" id="hName${safeName}" name="longAns"/>
         </div>

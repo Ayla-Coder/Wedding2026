@@ -3,50 +3,47 @@
     <head>
         <script src="https://cdn.jsdelivr.net/gh/tanaikech/HtmlFormObjectParserForGoogleAppsScript_js/htmlFormObjectParserForGoogleAppsScript_js.min.js"></script>
         <link href="styles/RSVP_style.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
     </head>
     <body>
         <form id="mainRSVPForm" autocomplete="off"> 
             <fieldset id="RSVPFieldset">
-                <legend><h3>RSVP form<img src="images/rings_transparent.png" alt="Ring icon" class="legend-img"></h3></legend>
-                <p>This form looks best on a desktop, although it does work using a phone or tablet. Please let me know if you have any issues or questions! 
-                    our email is codergulbrandsen@gmail.com. I will make a norwegian version asap!
+                <legend><h3>RSVP skjema<img src="images/rings_transparent.png" alt="Ring ikon" class="legend-img"></h3></legend>
+                <p>Dette skjemaet ser best ut på PC, men det fungerer på både telefon og tablett. Vennligst si ifra om du har noen spørsmål 
+                    eller om noe ikke fungerer som det skal, via emailen vår: codergulbrandsen@gmail.com.  
                 </p>
-                <label for="Responder">Please enter your full name (the person filling out the form):</label>
+                <label for="Responder">Vennligst oppgi ditt fulle navn (personen som fyller ut skjemaet):</label>
                 <input type="text" id="Responder" name="responder" placeholder="Full name" required> <br><br>
                 
-                <h4>Can your group make it?</h4>
+                <h4>Kommer du/gruppen din</h4>
                 <input type="radio" id="Coming" name="RSVP1" value="yes" required>
-                <label for="Coming">Yes</label>
+                <label for="Coming">Ja</label>
                 <input type="radio" id="NotComing" name="RSVP1" value="no">
-                <label for="NotComing">No</label> <br><br>
+                <label for="NotComing">Nei</label> <br><br>
                 
                 <div id="Q1yes" style="display:none;">
-                    <legend><h4>Remember to sign on to get important updates from the website!</h4></legend>
-                    <label for="EUpdates">Please enter your email here:</label>
+                    <legend><h4>Husk å melde deg på for å få med deg viktige oppdateringer angående nettsiden eller bryllupet!</h4></legend>
+                    <label for="EUpdates">Skrive inn mailaddressen din her:</label>
                     <input type="email" id="EUpdates" name="email" placeholder="example@gmail.com"><br><br>
                     <input type="checkbox" id="NoElUp" name="noEmail">
-                    <label for="NoElUp">No thank you, I'll make sure to keep checking the website myself</label>
+                    <label for="NoElUp">Nei takk, jeg skal passe på å regelmessig sjekke nettsiden på egenhånd</label>
                     <br><br>
                     <button type="button" id="nextButton">OK</button>
                 </div>
                 
                 <div id="SubmitDiv" name="submit" style="display:none;">
-                    <button type="submit" id="Submit" name="submitbtn">Submit</button>
+                    <button type="submit" id="Submit" name="submitbtn">Levere</button>
                      
                 </fieldset>
 
 
             <fieldset id="guestInfoSection" style="display:none;">
-                <legend><h2>Guest Info:<img src="images/Frilled_heart.png" alt="Heart icon" class="legend-img"></h2></legend>
-                <label for="guestNR">How many guests from your group are coming (including you, the responder, and children)?</label>
+                <legend><h2>Gjest Info:<img src="images/Frilled_heart.png" alt="Heart icon" class="legend-img"></h2></legend>
+                <label for="guestNR">Hvor mange gjester kommer fra gruppen din (inkludert deg og barn)?</label>
                 <input type="number" min=1 max=10 id="guestNR"/>
                 <br><br>
 
                 <div id="gInfo" style="display:none">
-                    <b> Please also fill out the info for you, the responder, as Guest 1.</b>                    
+                    <b> Husk å fylle ut din info, du som svarer skjemaet, som gjest 1.</b>                    
                 </div>
 
                 <br><br>
@@ -58,9 +55,9 @@
             </fieldset>
 
             <fieldset id="Menu" style="display:none">
-                <legend><h2>Menu<img src="images/Cutlery_transparent.png" alt="Cutlery icon" class="legend-img"></h2></legend>
-                <p>The main course will likely be beef. We will update our website with the chosen menu when we know more, but this won't be until 2026. </p>
-
+                <legend><h2>Meny<img src="images/Cutlery_transparent.png" alt="Cutlery icon" class="legend-img"></h2></legend>
+                <p>Hovedretten vil mest sannsynlig bestå av biff. Vi kommer til å oppdatere nettsiden med en mer detaljert meny når vi veit mere, men dette skjer mest
+                    sannsynlig ikke før 2026. </p>
                 <div id="guestMeals">
                 </div>
                 
@@ -72,11 +69,13 @@
             </fieldset>
 
             <fieldset id="Bus" style="display:none">
-                <legend><h2>Will any of you be taking the bus? What time?<img src="images/bus_transparent.png" alt="Bus icon" class="legend-img2"></h2></legend>
-                <p>Remember that we will ask that you pay a small sum of money to cover some of the cost of hiring the bus. We will keep this under
-                    the price of hiring a taxi, which are notoriously expensive in Norway, though this is always an option. As for payment options, 
-                    I'll set that up on the website asap. 
+                <legend><h2>Kommer du/dere til å benytte bussen? Hvilket klokkeslett? <img src="images/bus_transparent.png" alt="Bus icon" class="legend-img2"></h2></legend>
+                <p>Vi vil gjerne be deg om å bidra med et lite beløp for å dekke en del av kostnadene ved å leie bussen. 
+                    Vi sørger for at prisen blir lavere enn det det vanligvis koster å ta en taxi her i Norge, som ofte kan være ganske dyrt. 
+                    Når det gjelder betalingsmåter, jobber jeg med å få dette klart på nettsiden så raskt som mulig slik at dette blir enkelt for 
+                    alle. Takk for forståelsen!
 
+                    Vi er heller ikke 100% sikker på busstidene enda, eller om vi kommer til 
                     Again, we aren't 100% sure about the times for the bus yet, or if we'll hire one for both pick-up and drop-off. It all depends on 
                     the amount of people who want/need to take the bus. All of this info will be posted to the website as soon as we know more.</p>
                 
