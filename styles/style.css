@@ -38,6 +38,9 @@ html {
     font-size: 40px;
     text-align: left;
     font-weight: bold;
+    margin-top:0;
+    margin-bottom:0;
+
 
   }
 
@@ -46,10 +49,12 @@ html {
     font-size: 20px;
     text-align: left;
     font-weight: 800;
-  
+    margin-top:0;
+    margin-bottom:0;
 
+      }
 
-  }
+ 
 
   html {
     font-family: "Open Sans", sans-serif;
@@ -88,3 +93,27 @@ html {
     margin: 20px 0px;
     box-sizing: border-box;
   }
+
+  .collapsible {
+  background-color: #eeeeee31;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: hsla(194, 100%, 77%, 0.339);
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f1f1f156;
+  transition: max-height 0.2s ease-out;
+}

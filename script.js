@@ -12,3 +12,20 @@ async function run(e) {
     e.value = "Submitted!";
     e.disabled = true;
     }
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    
+    // Check if it's currently expanded (has a max-height value set)
+    if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
