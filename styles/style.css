@@ -1,5 +1,5 @@
 html {
-    background-image: url("../images/Engagement_header.png");
+    background-image: url("../images/Background without border.png");;
     background-size: 100%;
     background-position: 65% 15%;
     background-color: #A8322D;
@@ -11,7 +11,7 @@ html {
     width: 1000px;
     
     margin: 0 auto;
-    background-image: linear-gradient( rgba(255, 255, 255, 0), rgb(255, 255, 255));
+
     padding: 0 60px 60px 60px;
     border: 5px white;
   }
