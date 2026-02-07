@@ -1,12 +1,26 @@
 html {
-    background-image: url("../images/Background without border.png");;
+    background-image: url("../images/Background without border.png");
     background-size: cover;
     background-position: 65% 15%;
     background-color: #A8322D;
-    background-attachment: fixed;
+    background-attachment: scroll;  /* Default to scroll for mobile */
     cursor: crosshair;
-  }
+}
 
+/* Only use fixed background on larger screens (desktop) */
+@media screen and (min-width: 768px) {
+    html {
+        background-attachment: fixed;
+    }
+}
+
+body {
+    width: 1000px;
+    max-width: 100%;  /* Add this so it doesn't overflow on mobile */
+    margin: 0 auto;
+    padding: 0 60px 60px 60px;
+    border: 5px white;
+}
   body {
     width: 1000px;
     
