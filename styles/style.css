@@ -1,7 +1,7 @@
 html {
     background-image: url("../images/Background without border.png");
-    background-size: cover;
-    background-position: 65% 15%;
+    background-size: 200%;
+    background-position: 100% 100%;
     background-color: #A8322D;
     background-attachment: scroll;  /* Default to scroll for mobile */
     cursor: crosshair;
