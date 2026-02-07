@@ -18,7 +18,24 @@ html::before {
     z-index: -1;  /* Behind all content */
     pointer-events: none;  /* Allows clicking through */
 }
+/* Keep side-by-side images the same height */
+center img {
+    height: 340px;  /* Set consistent height */
+    width: auto;    /* Width adjusts to maintain aspect ratio */
+    max-width: 100%; /* Still responsive on small screens */
+}
 
+/* Make this specific image taller */
+.shorter_image {
+    height: 170px !important;  /* Or whatever height you want */
+}
+
+/* On mobile, reduce the height proportionally */
+@media screen and (max-width: 768px) {
+    center img {
+        height: 200px;  /* Smaller height on mobile */
+    }
+}
 
 
 body {
