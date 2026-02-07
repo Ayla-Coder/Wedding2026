@@ -119,6 +119,6 @@ html {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
-  background-color: #f1f1f156;
+  background-color: #f1f1f1bf;
   transition: max-height 0.2s ease-out;
 }
