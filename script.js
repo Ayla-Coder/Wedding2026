@@ -13,6 +13,7 @@ async function run(e) {
     e.disabled = true;
     }
 
+//Collapsable sections
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
