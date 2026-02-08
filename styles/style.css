@@ -35,7 +35,7 @@ html::before {
     .dress_image {
         height: 200px;  /* Smaller height on mobile */
     }
-    img {
+     {
        height: 200px;
     }
 }
@@ -78,16 +78,19 @@ html::before {
 @media screen and (max-width: 768px) {
     .drink-item img {
         height: 200px;
+        
     }
     
     .drink-item.beer img {
         height: 100px;
     }
+    
 }
 
 @media screen and (max-width: 768px) {
      img {
-        height: 200px;  /* Smaller height on mobile */
+        transform: scale(0.6);  /* 60% of original size */
+        transform-origin: bottom;  /* Scale from bottom */
     }
 }
 body {
