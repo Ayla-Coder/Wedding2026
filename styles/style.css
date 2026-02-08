@@ -19,7 +19,7 @@ html::before {
     pointer-events: none;  /* Allows clicking through */
 }
 /* Keep side-by-side images the same height */
-center img {
+.dress_image {
     height: 340px;  /* Set consistent height */
     width: auto;    /* Width adjusts to maintain aspect ratio */
     max-width: 100%; /* Still responsive on small screens */
@@ -32,8 +32,11 @@ center img {
 
 /* On mobile, reduce the height proportionally */
 @media screen and (max-width: 768px) {
-    center img {
+    .dress_image {
         height: 200px;  /* Smaller height on mobile */
+    }
+    img {
+       height: 200px;
     }
 }
 
