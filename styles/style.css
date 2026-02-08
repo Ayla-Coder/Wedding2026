@@ -30,15 +30,7 @@ html::before {
     height: 170px !important;  /* Or whatever height you want */
 }
 
-/* On mobile, reduce the height proportionally */
-@media screen and (max-width: 768px) {
-    .dress_image {
-        height: 200px;  /* Smaller height on mobile */
-    }
-     {
-       height: 200px;
-    }
-}
+
 
 /* Drinks container */
 .drinks-container {
