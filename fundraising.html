@@ -32,12 +32,79 @@
     <p>You can either transfer the money directly to our bank account, pay us in cash (preferably Norwegian kroner)
         or use Paypal or Vipps. We would prefer digital methods, but we'll make whatever is easiest for you work. 
     </p>
+  
     
-   <center><a href="https://paypal.me/AylaCoder"> <img src="images/Paypal_icon.png" alt = "paypal icon" width="159.3" height="100"; style = "margin-top: 20px"> </a>
-    <img src="./images/Bank_acc.jpg" alt="Bank account number" width="202.8" height="100" >
-    <a href="https://qr.vipps.no/box/73ef3a48-f475-48c9-8b16-32988b9ddcaa/pay-in"> <img src="images/vipps_funny.png" alt = "Vipps funny icon" width="190.5" height="100"> </a></center>
-    
+<div class="table_bottom_page">
+  <div>
+    <a href="https://paypal.me/AylaCoder">
+      <img src="images/Paypal_icon.png" alt="paypal icon" height="100">
+    </a>
+  </div>
 
+  <div>
+    <a href="https://qr.vipps.no/box/73ef3a48-f475-48c9-8b16-32988b9ddcaa/pay-in">
+      <img src="images/vipps_funny.png" alt="Vipps funny icon" height="100">
+    </a>
+  </div>
+<div>
+  <div class="account-box" id="transfer-btn">
+  <div style="display:flex; align-items:center; gap:12px;">
+    <img src="./images/bank logo.png" alt="Bank logo" height="50">
+    <span style="font-size:30px; font-weight:bold;">Direct Transfer</span>
+  </div>
+</div>
+</div>
+<div></div><div></div>
+<!-- Collapsible IBAN info, sits below all three -->
+<details class="iban-details">
+  <summary>Show bank details</summary>
+  <div class="account-box" style="margin-top: 16px;">
+    <div class="table2">
+      <div>
+        <span class="account-label">Account number</span><br>
+        <span class="account-number">6201.56.93512</span><br><br>
+
+        <span class="account-label">Phone number (Nordea Bank)</span><br>
+        <span class="account-number">+47 23 20 60 01</span><br>
+      </div>
+     
+      <div>
+        <span class="account-label">IBAN for USA:</span><br>
+        <span class="account-number">NO2162015693512</span><br><br>
+        <span class="account-label">IBAN for UK:</span><br>
+        <span class="account-number">GB29NWBK60161331926819</span><br><br>
+        <span class="account-label">Nordeas Swift code:</span><br>
+        <span class="account-number">NDEANOKK</span>
+      </div>
+      <div>
+        <span class="account-label">Mailing address:</span><br>
+        <span class="account-number">Nordea Bank</span><br>
+        <span class="account-number">Postboks 1166 Sentrum</span><br>
+        <span class="account-number">0107 Oslo</span><br><br>
+        <span class="account-label">Physical address:</span><br>
+        <span class="account-number">Nordea Bank</span><br>
+        <span class="account-number">Essendrops gate 7</span><br>
+        <span class="account-number">0368 Oslo</span>
+      </div>
+    </div>
+  </div>
+</details>
+</div>
+
+<script>
+  const transferBtn = document.getElementById('transfer-btn');
+  const ibanDetails = document.querySelector('.iban-details');
+
+  transferBtn.style.cursor = 'pointer';
+
+  transferBtn.addEventListener('click', () => {
+    if (ibanDetails.hasAttribute('open')) {
+      ibanDetails.removeAttribute('open');
+    } else {
+      ibanDetails.setAttribute('open', '');
+    }
+  });
+</script>
 
 </body>
 </html>

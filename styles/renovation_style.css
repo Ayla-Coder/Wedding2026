@@ -98,6 +98,10 @@ html {
     box-sizing: border-box;
   }
 
+  img {
+    width: auto;
+  }
+
   .collapsible {
   background-color: #eeeeee31;
   color: black;
@@ -124,4 +128,62 @@ html {
 
 .boxed {
     background-color: rgba(255, 255, 255, 0.383);
+}
+
+.account-box {
+  background-color: rgb(255, 254, 254);
+  border-radius: 12px;
+
+  padding: 20px 30px;
+  width:fit-content;
+ 
+ 
+}
+
+.account-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.account-label {
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+/* table */
+
+.table2 {
+  display: grid;  
+  grid-template-columns: repeat(3, auto);
+  gap: 24px;
+}
+
+.table_bottom_page {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.table_bottom_page > div {
+  padding: 3px;
+}
+
+/* Collapsible */
+.iban-details {
+  margin-top: 16px;
+}
+.iban-details > .account-box {
+  margin-top: 0;
+}
+
+
+.iban-details summary {
+  display: none; /* hide the default summary — the Direct Transfer box acts as the trigger */
+}
+.stacked {
+  display: grid;  
+  grid-template-columns: auto;
+  gap: 24px;
 }

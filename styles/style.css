@@ -30,8 +30,6 @@ html::before {
     height: 170px !important;  /* Or whatever height you want */
 }
 
-
-
 /* Drinks container */
 .drinks-container {
     display: flex;
