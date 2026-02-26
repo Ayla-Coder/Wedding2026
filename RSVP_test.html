@@ -1,0 +1,23 @@
+<script src="https://cdn.jsdelivr.net/gh/tanaikech/HtmlFormObjectParserForGoogleAppsScript_js@master/htmlFormObjectParserForGoogleAppsScript_js.min.js"></script>
+
+<form>
+  Text: <input type="text" name="sampleText" /><br />
+  File: <input type="file" name="sampleFiles" multiple /><br />
+
+  <input
+    type="submit"
+    name="button"
+    value="submit"
+    onclick="main(this);return false;"
+  />
+</form>
+
+<script>
+  async function main(e) {
+    const obj = await ParseFormObjectForGAS(e.parentNode); // Heare, this library is used.
+    google.script.run
+      .withFailureHandler((err) => console.log(err.message))
+      .withSuccessHandler((res) => console.log(res))
+      .getFormValues(obj); // The form object parsed by this library is used here.
+  }
+</script>
